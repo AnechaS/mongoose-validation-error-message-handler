@@ -1,0 +1,40 @@
+{
+  "name": "mongoose-validation-error-message-handler",
+  "version": "1.0.0",
+  "description": "Mongoose Validation Error Handler",
+  "main": "lib/index.js",
+  "files": [
+    "lib/",
+    "README.md"
+  ],
+  "scripts": {
+    "test": "jest ./test"
+  },
+  "keywords": [
+    "error",
+    "handler",
+    "handling",
+    "messages",
+    "parser",
+    "validation",
+    "transform"
+  ],
+  "author": "Anachitheu.k@gmail.com",
+  "license": "ISC",
+  "dependencies": {
+    "lodash": "4.17.20",
+    "string-template": "1.0.0"
+  },
+  "devDependencies": {
+    "@shelf/jest-mongodb": "1.2.3",
+    "jest": "26.6.3",
+    "mongoose": "5.11.12"
+  },
+  "jest": {
+    "preset": "@shelf/jest-mongodb"
+  },
+  "prettier": {
+    "semi": true,
+    "singleQuote": true
+  }
+}
