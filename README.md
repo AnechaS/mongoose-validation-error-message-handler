@@ -95,7 +95,7 @@ const object = new model({});
 object.save(function (err, doc) {
   if (err) {
     const error = mongooseErrorHandler(err, {
-      path: {
+      paths: {
         name: { origin: true },
         nameX: { origin: true, kind: 'maxlength' },
       }
@@ -127,7 +127,7 @@ const object = new model({});
 object.save(function (err, doc) {
   if (err) {
     const error = mongooseErrorHandler(err, {
-      path: {
+      paths: {
         name: { message: 'name is required' },
         nameX: { message: 'name length must be less than or equal to {maxlength} characters long', kind: 'maxlength' },
       }
