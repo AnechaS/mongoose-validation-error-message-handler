@@ -1,15 +1,21 @@
 {
   "name": "mongoose-validation-error-message-handler",
-  "version": "1.0.0",
-  "description": "Mongoose Validation Error Handler",
-  "main": "lib/index.js",
+  "version": "1.1.0",
+  "description": "Mongoose Validation Error Message Handler",
+  "main": "index.js",
   "files": [
     "lib/",
+    "index.js",
     "README.md"
   ],
   "scripts": {
     "test": "jest ./test"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AnechaS/mongoose-validation-error-message-handler"
+  },
+  "homepage": "https://github.com/AnechaS/mongoose-validation-error-message-handler#readme",
   "keywords": [
     "error",
     "handler",
@@ -20,18 +26,20 @@
     "transform"
   ],
   "author": "Anachitheu.k@gmail.com",
-  "license": "ISC",
   "dependencies": {
     "lodash": "4.17.20",
     "string-template": "1.0.0"
   },
+  "bugs": {
+    "url": "https://github.com/AnechaS/mongoose-validation-error-message-handler/issues"
+  },
   "devDependencies": {
-    "@shelf/jest-mongodb": "1.2.3",
+    "eslint": "^7.18.0",
     "jest": "26.6.3",
-    "mongoose": "5.11.12"
+    "mongoose": "^5.11.12"
   },
   "jest": {
-    "preset": "@shelf/jest-mongodb"
+    "testEnvironment": "node"
   },
   "prettier": {
     "semi": true,

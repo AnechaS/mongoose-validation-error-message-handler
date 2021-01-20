@@ -1,0 +1,35 @@
+{
+  "root": true,
+  "env": {
+    "commonjs": true,
+    "es6": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "modules": true,
+      "experimentalObjectRestSpread": true
+    }
+  },
+  "rules": {
+    "indent": ["error", 2, { "SwitchCase": 1 }],
+    "semi": ["error", "always"],
+    "quotes": ["error", "single", { "avoidEscape": true }],
+    "no-var": "error",
+    "no-unused-vars": ["error", { "argsIgnorePattern": "next" }],
+    "no-console": ["error"],
+    "func-style": ["error", "declaration", { "allowArrowFunctions": true }],
+    "object-curly-spacing": ["error", "always"],
+    "comma-spacing": ["error", { "before": false, "after": true }],
+    "key-spacing": ["error", { "beforeColon": false }],
+    "no-constant-condition": ["error", { "checkLoops": false }],
+    "quote-props": ["error", "as-needed"],
+    "no-prototype-builtins": [0],
+    "require-atomic-updates": [0]
+  },
+  "ignorePatterns": ["example"]
+}
