@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const mongooseErrorHandler = require('..');
+const mongooseErrorHandler = require('../');
 
 const schema = new mongoose.Schema({
   name: {

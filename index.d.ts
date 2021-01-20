@@ -1,6 +1,3 @@
-
-export = mongooseValidationErrorHandler;
-
 type ValidatorMessages = {
   base: String,
   required: String,
