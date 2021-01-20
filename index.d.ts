@@ -26,3 +26,5 @@ type Paths = {
 
 declare function mongooseValidationErrorHandler(error: Error, options?: { messages?: ValidatorMessages, paths?: Paths }): Error;
 declare namespace mongooseValidationErrorHandler {}
+
+export = mongooseValidationErrorHandler;
