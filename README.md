@@ -1,4 +1,5 @@
-# Mongoose Validation Failed Handler
+# Mongoose Validation Error Message Handler
+is responsilbe transfroming mongoose validation error into generic form.
 
 ## Install
 
@@ -240,7 +241,7 @@ app.listen(3000)
 ### messages
 
 | Kind | Properties | Message | SchemaTypeOptions
-|------------------------|---------------|
+|---------------|---------------|------------------------|---------------|
 | base | `path`, `value` | {path} is invalid |
 | boolean | `path`, `value` | {path} must be a boolean | type |
 | buffer | `path`, `value` | {path} must be a buffer | type |
@@ -258,7 +259,7 @@ app.listen(3000)
 | regexp | `path`, `value`, `regexp` | {path} format is invalid | match |
 | required | `path`, `value` | {path} is required | required |
 | string | `path`, `value` | {path} must be a string | type |
-| unique | email 'youremail@email.com' already exists. | unique |
+| unique | `path`, `value` | "{path}" is already exists | unique |
 | validate | `path`, `value`, `enumValues` | {path} is invalid | validate |
 
 ### paths
