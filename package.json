@@ -5,7 +5,9 @@
   "main": "index.js",
   "files": [
     "lib/",
+    "index.d.ts",
     "index.js",
+    "LICENSE",
     "README.md"
   ],
   "scripts": {
@@ -44,5 +46,6 @@
   "prettier": {
     "semi": true,
     "singleQuote": true
-  }
+  },
+  "license": "unlicense"
 }
