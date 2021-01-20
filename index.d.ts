@@ -27,5 +27,5 @@ type Paths = {
   [path: string]: { origin: Boolean, kind: String, message: String }
 }
 
-declare function mongooseValidationErrorHandler(error: Error, options?: { messages?: ValidatorMessages, paths?: paths }): Error;
+declare function mongooseValidationErrorHandler(error: Error, options?: { messages?: ValidatorMessages, paths?: Paths }): Error;
 declare namespace mongooseValidationErrorHandler {}
