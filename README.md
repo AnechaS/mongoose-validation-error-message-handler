@@ -24,7 +24,7 @@ const schema = new mongoose.Schema({
 
 const model = mongoose.model('person', schema);
 
-const object = new model({ name: 'a' });
+const object = new model({});
 object.save(function (err, doc) {
   if (err) {
     const error = mongooseErrorHandler(err);
@@ -34,8 +34,8 @@ object.save(function (err, doc) {
      * message: "name" is required
      * name: 'MongooseValidatorError',
      * path: 'name',
-     * kind: 'unique',
-     * value: "a"
+     * kind: 'required',
+     * value: undefined
      */
   }
 });
