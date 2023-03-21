@@ -1,30 +1,35 @@
 type ValidatorMessages = {
-  base: String,
-  required: String,
-  enum: String,
-  validate: String,
-  unique: String,
-  buffer: String,
-  boolean: String,
-  objectId: String,
-  map: String,
-  string: String,
-  maxlength: String,
-  minlength: String,
-  regexp: String,
-  number: String,
-  'number.max': String,
-  'number.min': String,
-  date: String,
-  'date.max': String,
-  'date.min': String,
-}
+  base: string;
+  required: string;
+  enum: string;
+  validate: string;
+  unique: string;
+  buffer: string;
+  boolean: string;
+  objectId: string;
+  map: string;
+  string: string;
+  maxlength: string;
+  minlength: string;
+  regexp: string;
+  number: string;
+  'number.max': string;
+  'number.min': string;
+  date: string;
+  'date.max': string;
+  'date.min': string;
+};
 
 type Paths = {
-  [path: string]: { origin: Boolean, kind: String, message: String }
-}
+  [path: string]: { origin: Boolean; kind: string; message: string };
+};
 
-declare function mongooseValidationErrorHandler(error: Error, options?: { messages?: ValidatorMessages, paths?: Paths }): Error;
+type Options = {
+  messages?: ValidatorMessages;
+  paths?: Paths;
+};
+
+declare function mongooseValidationErrorHandler(error: Error, options?: Options): Error;
 declare namespace mongooseValidationErrorHandler {}
 
 export = mongooseValidationErrorHandler;
