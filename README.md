@@ -175,7 +175,7 @@ object.save(function (err, doc) {
     const error = mongooseErrorHandler(err);
     console.log(error);
     /**
-     * Error [MongooseValidatorError]: "name" is already exists
+     * Error [MongooseValidatorError]: "name" already exists
      * name: 'MongooseValidatorError',
      * path: 'name',
      * kind: 'unique',
@@ -262,7 +262,7 @@ app.listen(3000)
 | regexp | `path`, `value`, `regexp` | {path} format is invalid | match |
 | required | `path`, `value` | {path} is required | required |
 | string | `path`, `value` | {path} must be a string | type |
-| unique | `path`, `value` | "{path}" is already exists | unique |
+| unique | `path`, `value` | "{path}" already exists | unique |
 | validate | `path`, `value`, `enumValues` | {path} is invalid | validate |
 
 ### paths
