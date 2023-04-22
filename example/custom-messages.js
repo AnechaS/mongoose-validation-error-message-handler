@@ -15,7 +15,7 @@ const messages = {
   required: '{path} is required',
   enum: '{path} is invalid',
   validate: '{path} is invalid',
-  unique: '{path} is already exists',
+  unique: '{path} already exists',
   boolean: '{path} must be a boolean',
   buffer: '{path} must be a buffer',
   objectId: '{path} must be a objectId',

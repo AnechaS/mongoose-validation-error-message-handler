@@ -25,7 +25,7 @@ object.save(function (err, doc) {
     const error = mongooseErrorHandler(err);
     console.log(error);
     /**
-     * Error [MongooseValidatorError]: "name" is already exists
+     * Error [MongooseValidatorError]: "name" already exists
      * name: 'MongooseValidatorError',
      * path: 'name',
      * kind: 'unique',
