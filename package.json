@@ -1,6 +1,6 @@
 {
   "name": "mongoose-validation-error-message-handler",
-  "version": "1.2.8",
+  "version": "1.2.9",
   "description": "Mongoose Validation Error Message Handler",
   "main": "index.js",
   "files": [
